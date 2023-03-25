@@ -1,0 +1,12 @@
+name: Purge Jsdelivr CDN
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  Purge-Jsdelivr-CDN:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Jsdelivr CDN
+        run: curl https://purge.jsdelivr.net/gh/Bkebi-Group/Bkebi-Group.github.io/docs/
